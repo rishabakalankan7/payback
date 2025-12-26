@@ -1,0 +1,225 @@
+body {
+    background-color: #f8f9fa;
+}
+
+.container {
+    max-width: 800px;
+}
+
+.card {
+    border-radius: 0.75rem;
+}
+
+#json-output {
+    background-color: #e9ecef;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.expense-item {
+    border: 1px solid #dee2e6;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.settlement-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    font-size: 1.1rem;
+}
+
+.payer {
+    font-weight: 500;
+    color: #d63384; /* Bootstrap pink */
+}
+
+.payee {
+    font-weight: 500;
+    color: #0d6efd; /* Bootstrap blue */
+}
+
+.amount {
+    font-weight: bold;
+    color: #198754; /* Bootstrap green */
+}
+
+.arrow {
+    font-weight: bold;
+    margin: 0 1rem;
+}
+
+.friend-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.friend-chip {
+    display: inline-block;
+    background-color: #0d6efd;
+    color: white;
+    padding: 0.4rem 0.8rem;
+    border-radius: 1rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.read-only-expense-item {
+    border-left: 4px solid #0d6efd;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background-color: #f8f9fa;
+    border-radius: 0.25rem;
+}
+
+.read-only-expense-item h6 {
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #212529;
+}
+
+.read-only-expense-detail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+}
+
+.read-only-expense-label {
+    color: #666;
+    font-weight: 500;
+}
+
+.settlement-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    font-size: 1.1rem;
+}
+
+.settlement-card {
+    background: white;
+    border: 1px solid #e0e0e0;
+    color: #333;
+    padding: 1.25rem;
+    border-radius: 0.75rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.settlement-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12);
+}
+
+.settlement-card.alternate {
+    background: white;
+    border: 1px solid #e0e0e0;
+}
+
+.settlement-from {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    flex: 1;
+}
+
+.settlement-from-name {
+    font-weight: 600;
+    font-size: 1rem;
+    color: #333;
+}
+
+.settlement-arrow-section {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin: 0 1rem;
+    flex: 1.2;
+    justify-content: center;
+}
+
+.settlement-arrow {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #666;
+    letter-spacing: 0.3rem;
+}
+
+.settlement-to-name {
+    font-weight: 600;
+    font-size: 1rem;
+    color: #333;
+}
+
+.settlement-amount {
+    font-weight: bold;
+    font-size: 1.3rem;
+    min-width: 120px;
+    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0.5rem;
+    color: #198754;
+}
+
+.settlement-icon {
+    font-size: 1.25rem;
+    opacity: 0.9;
+    color: #0d6efd;
+}
+
+.settlements-empty {
+    text-align: center;
+    padding: 2rem;
+    background-color: #f0f8f0;
+    color: #2d6a4f;
+    border: 1px solid #d4f0d4;
+    border-radius: 0.75rem;
+    font-weight: 600;
+}
+
+.settlements-empty i {
+    display: block;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: #198754;
+}
+
+.settlement-legend {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem;
+    background-color: #f0f8ff;
+    border: 1px solid #d4e6f1;
+    border-radius: 0.5rem;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-weight: 500;
+}
+
+.legend-arrow {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #666;
+}
